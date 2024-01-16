@@ -142,6 +142,7 @@ a {
     justify-content: center;
     gap: 30px;
     margin-bottom: 30px;
+    align-items: stretch;
 }
 
 .carte-content {
@@ -154,7 +155,7 @@ a {
 
 .carte {
     width: 250.3px;
-    height: 207.25px;
+    height: auto;
     background-color: white;
     border: 5px solid white;
     border-radius: 20px;
@@ -294,9 +295,13 @@ a {
     transition: background-color 0.3s
 }
 
-.filtre p {
+.filtre span {
     font-size: 17px;
     font-weight: 700;
+}
+
+.filtre i {
+    font-size: 22px;
 }
 
 .filtre-bar-categories button:hover {
@@ -352,7 +357,6 @@ a {
     height: auto;
     margin-top: 30px;
 }
-
 
 
 .barre-recherche {
@@ -414,9 +418,10 @@ input {
     font-weight: 400;
 }
 
-.footer {
+footer {
     background-color: var(--main-bg-color);
     padding: 20px;
+    margin-bottom: -10px;
 }
 
 .row {
@@ -433,13 +438,13 @@ input {
     gap: 15px;
 }
 
-.footer h2 {
+footer h2 {
     font-size: 18px;
     font-weight: 700;
     margin: 0px;
 }
 
-.footer p {
+footer p {
     font-size: 16px;
     font-weight: 400;
     margin: 0px;
@@ -460,7 +465,7 @@ input {
     }
     
     .filtre-text {
-        padding: Opx;
+        padding: 0px;
     }
 
     .hebergements-and-populaires {
@@ -597,13 +602,19 @@ input {
         visibility: visible;
     }
 
+    .search-icon-loop i {
+        font-size: 17px;
+        color: white;
+    }
+
     .barre-recherche {
-        width: 100%;
-        margin-left: 2px;
+        margin-left: 12px;
+        max-width: 335px;
     }
 
     .recherche {
         width: 100%;
+        
     }
 
     input {
@@ -643,12 +654,15 @@ input {
         text-align: center;
     }
 
-    .filtre p {
+    .filtre span {
         font-size: 14px;
+        white-space: nowrap;
+        overflow: hidden;
+        text-overflow: ellipsis;
     }
 
     .info {
-        width: 95%;
+        width: 95%; 
         margin-left: 12px;
         padding: 0px;
     }
@@ -758,7 +772,7 @@ input {
   
     /* Partie Footer*/
     
-    .footer {
+    footer {
         background-color: var(--main-bg-color);
         padding: 30px;
         margin-right: -8px;
@@ -779,11 +793,11 @@ input {
     }
 
 
-    .footer h2 {
+    footer h2 {
         margin: 0px;
     }
 
-    .footer p {
+    footer p {
         margin: 0px;
     }
 }

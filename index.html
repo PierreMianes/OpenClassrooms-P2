@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
         integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -45,35 +46,37 @@
                 </div>
                 <div class="recherche">
                     <input type="search" placeholder="Marseille, France">
-            </div>
+                </div>
                 <button type="submit" class="search-button">Rechercher</button>
-                <button class="search-icon-loop"><img src="images/logo/search.svg" alt="Icon de loop"></button>
+                <button class="search-icon-loop">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
             </div>
            
             <div class="filtres-bar">
                 <p class="filtre-text">Filtres</p>
                 <div class="filtre-bar-categories">
                     <button class="filtre">
-                        <img src="images/logo/billet.svg" alt="Icon de billet">
-                        <p>Économique</p>
+                        <i class="fa-solid fa-money-bill-wave"></i> 
+                        <span>Économique</span>
                     </button>
                     <button class="filtre">
-                        <img src="images/logo/personne.svg" alt="Icon d'une personne">
-                        <p>Familial</p>
+                        <i class="fa-solid fa-person"></i>
+                        <span>Familial</span>
                     </button>
                     <button class="filtre">
-                        <img src="images/logo/coeur.svg" alt="Icon d'un coeur">
-                        <p>Romantique</p>
+                        <i class="fa-solid fa-heart"></i>
+                        <span>Romantique</span>
                     </button>
                     <button class="filtre">
-                        <img src="images/logo/flammes.svg" alt="Icon d'une flamme">
-                        <p>Nos pépites</p>
+                        <i class="fa-sharp fa-solid fa-fire"></i>
+                        <span>Nos pépites</span>
                     </button>
                 </div>
             </div>
 
             <div class="info">                
-                <img src="images/logo/Info.svg" alt="Icon Info">                          
+                <i class="fa fa-info-circle" aria-hidden="true"></i>                          
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>            
             </div>
            
@@ -83,7 +86,7 @@
                         <h2>Hébergements à Marseille</h2>
                     </div>
                     <div class="hebergements-cartes">
-                        <a href="#" class="carte">
+                            <a href="#" class="carte">
                                 <article>
                                     <img src="images/hebergements/fred-kleber.jpg" alt="Chambre d'hotel du port">
                                         <div class="carte-content">
@@ -268,35 +271,43 @@
                         <h2>Activités à Marseille</h2>
                     </div>
                     <div class="activites-cartas">
-                            <article class="carta">
+                        <a href="#" class="carta">
+                            <article>
                                 <img src="images/activites/reno-laithienne.jpg" alt="Photo Vieux Port">
                                     <div class="carta-content">
                                         <h3 class="carta-title">Vieux-Port</h3>
                                     </div>
                             </article>
-                            <article class="carta">
+                        </a>
+                        <a href="#" class="carta">
+                            <article>
                                 <img src="images/activites/paul-hermann.jpg" alt="Photo Fort de Pomègues">
                                     <div class="carta-content">
                                         <h3 class="carta-title">Fort de Pomègues</h3>
                                     </div>
                             </article>
-                            <article class="carta">
+                        </a>
+                        <a href="#" class="carta">
+                            <article>
                                 <img src="images/activites/kilyan-sockalingum.jpg" alt="Photo Parc national des Calanques">
                                     <div class="carta-content">
                                         <h3 class="carta-title">Parc national des Calanques</h3>
                                     </div>
                             </article>
-                            <article class="carta">
+                        </a>
+                        <a href="#" class="carta">
+                            <article>
                                 <img src="images/activites/florian-wehde.jpg" alt="Photo Notre-Dame-de-la-Garde">
                                     <div class="carta-content">
                                         <h3 class="carta-title">Notre-Dame-de-la-Garde</h3>
                                     </div>
                             </article>
+                        </a>
                     </div>
             </section>
         </main>
 
-        <div class="footer">
+        <footer>
             <div class="row">
                 <div class="part-footer">
                     <h2>À propos</h2>
@@ -315,7 +326,7 @@
                     <p><a href="#">Nous contacter</a></p>
                 </div>
             </div>
-        </div>
+        </footer>
     </div>
 </body>
 
