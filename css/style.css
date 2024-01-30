@@ -369,6 +369,21 @@ a {
     visibility: hidden;
 }
 
+.location-icone {
+    width: 50px;
+    height: 51px;
+    background-color:#F2F2F2;
+    border-radius: 15px 0px 0px 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-icone i {
+    font-size: 19px;
+    color: black;
+}
+
 .search-button {
     height: 51px;
     padding: 15px 16px;
@@ -417,6 +432,21 @@ input {
     font-size: 16px;
     font-weight: 400;
 }
+
+.info i {
+    font-size: 10px;
+}
+
+.rond {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #D9D9D9;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 
 footer {
     background-color: var(--main-bg-color);
@@ -552,8 +582,6 @@ footer p {
         flex-direction: column;
         align-items: center;
         padding-bottom: 30px;
-        margin-left: -8px;
-        padding-right: 16px;
     }
 
     .logo {
@@ -562,7 +590,7 @@ footer p {
     }
 
     .nav-links {
-        width: 107%;
+        width: 102%;
         display: flex;
         gap: 0px;
         padding: 0px;
@@ -575,7 +603,6 @@ footer p {
         justify-content: center;
         padding-bottom: 15px;
         border-bottom: 2px solid var(--main-bg-color);
-        padding-left: 8px;
     }
 
     .link a:hover {
@@ -651,14 +678,15 @@ footer p {
 
     .filtre {
         width: 48%;
+        height: auto;
         text-align: center;
     }
 
     .filtre span {
         font-size: 14px;
+        height: auto;
         white-space: nowrap;
-        overflow: hidden;
-        text-overflow: ellipsis;
+        overflow: scroll;
     }
 
     .info {
