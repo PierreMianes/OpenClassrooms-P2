@@ -274,7 +274,7 @@ a {
     margin-top: 35px;
     font-size: 17px;
     font-weight: 700;
-    gap: 15px
+    gap: 15px;
 }
 
 .filtre-bar-categories {
@@ -416,6 +416,10 @@ input {
      color: black;
      text-align: center;
  }
+
+ .filtres-bar {
+    display: none;
+    }
 
 .info {
     width: 100%;
@@ -572,6 +576,10 @@ footer p {
         padding: 0px;
     }
 
+    .filtres-bar2 {
+        display: none;
+    }
+
 
     /* Partie du Header/Navbar et text-intro*/
 
@@ -685,8 +693,6 @@ footer p {
     .filtre span {
         font-size: 14px;
         height: auto;
-        white-space: nowrap;
-        overflow: scroll;
     }
 
     .info {
@@ -828,5 +834,36 @@ footer p {
     footer p {
         margin: 0px;
     }
+
 }
+    @media (max-width: 390px) {
+
+        .filtres-bar {
+            display: none;
+        }
+
+        .mot2 {
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .filtres-bar2 {
+            display: flex;
+            margin: 0px 12px 0px 12px;
+            padding-top: 10px;
+            flex-direction: column;
+            font-size: 17px;
+            font-weight: 700;
+            gap: 5px;
+            height: auto;
+        }
+
+        .espace {
+            display: inline-block;
+            width: 0.2em;
+            white-space: pre-wrap;
+        }
+    }
+
+
 
